@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriNova- Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roobert:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">AgriTech Advance</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Login</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section id="login-form" class="green-section">
+        <div class="content">
+            <form action="submit_login.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn">Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="dark-section">
+        <div class="content">
+            <p>Join our vibrant community of thousands of growers from all over the world sharing knowledge, support, and inspiration.</p>
+            <a href="signup.html" class="btn">Join us Now</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AgriNova. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriNova - Sign Up</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roobert:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">AgriNova</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Sign Up</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section id="signup-form" class="green-section">
+        <div class="content">
+            <form action="submit_signup.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="farmer">Farmer</option>
+                        <option value="agritech_startup">AgriTech Startup</option>
+                        <option value="consumer">Consumer</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="green-section">
+        <div class="content">
+            <p>Join our vibrant community of thousands of growers from all over the world sharing knowledge, support, and inspiration.</p>
+            <a href="signup.html" class="btn">Join us Now</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AgriNova. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
